@@ -1,12 +1,29 @@
 # Anaconda Environments
 
+
+Activate environment:
+
+```bash
+source activate ENV_NAME
+```
+
+```bash
+conda activate ENV_NAME
+```
+
+Deactivate environment:
+
+```bash
+conda deactivate
+```
+
 Export to **YML**:
 
 ```bash
 conda env export > FILENAME.yml
 ```
 
-Add to the kernels list:
+Add to the Jupyter/Hydrogen kernels list:
 
 ```bash
 source activate ENV_NAME
