@@ -23,3 +23,9 @@ Run script:
 ```bash
 python FILENAME.py
 ```
+
+Install pip package from folder:
+
+```bash
+pip install .
+```
