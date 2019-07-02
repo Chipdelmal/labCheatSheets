@@ -18,3 +18,9 @@ List running image:
 ```bash
 docker image ls
 ```
+
+Create image:
+
+```bash
+docker build --tag=NAME .
+```

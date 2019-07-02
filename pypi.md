@@ -1,7 +1,7 @@
 # Pypi
 
 
-To update the package at Pypi, change the version number in **setup.py** and run the following:
+To update the package at Pypi, change the version number in **setup.py** and run:
 
 ```bash
 python3 setup.py sdist bdist_wheel
