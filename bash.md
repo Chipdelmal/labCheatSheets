@@ -12,10 +12,16 @@ Display current path:
 pwd
 ```
 
-Move file/folder
+Move file/folder:
 
 ```bash
-mv SOURCE DESTINATION_PATH
+mv SOURCE_PATH DESTINATION_PATH
+```
+
+Copy file/folder (recursive):
+
+```bash
+cp SOURCE_PATH DESTINATION_PATH
 ```
 
 Command help:
@@ -53,3 +59,13 @@ Clear terminal:
 ```bash
 clear
 ```
+
+Print contents of file:
+
+```bash
+cat FILENAME
+```
+
+<hr>
+
+More: http://oliverelliott.org/article/computing/ref_unix/
