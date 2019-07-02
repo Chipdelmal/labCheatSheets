@@ -1,6 +1,10 @@
 # Server-Related
 
+SSH into the server:
 
+```bash
+ssh USERNAME@marshall-lab-cal.berkeley.edu
+```
 
 Copy file **from server**:
 
