@@ -53,3 +53,9 @@ List environments:
 ```bash
 conda info --envs
 ```
+
+Update anaconda:
+
+```bash
+conda update -n base conda
+```
