@@ -17,17 +17,12 @@ Deactivate environment:
 conda deactivate
 ```
 
+<hr>
+
 Export to **YML**:
 
 ```bash
 conda env export > FILENAME.yml
-```
-
-Add to the Jupyter/Hydrogen kernels list:
-
-```bash
-source activate ENV_NAME
-python -m ipykernel install --user --name ENV_NAME
 ```
 
 Create environment from **YML**:
@@ -36,11 +31,8 @@ Create environment from **YML**:
 conda env create -f FILENAME.yml
 ```
 
-List environments:
+<hr>
 
-```bash
-conda list
-```
 
 Uninstall environment:
 
