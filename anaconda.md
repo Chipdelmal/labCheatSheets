@@ -31,6 +31,18 @@ Create environment from **YML**:
 conda env create -f FILENAME.yml
 ```
 
+Export requirements to **txt** file:
+
+```bash
+conda list -e > REQUIREMENTS.txt
+```
+
+Import requirements from **txt** file:
+
+```bash
+conda create -n new ENV_NAME --file REQUIREMENTS.txt
+```
+
 <hr>
 
 
