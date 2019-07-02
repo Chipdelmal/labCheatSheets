@@ -17,3 +17,9 @@ Uninstall package:
 ```bash
 pip uninstall pandas
 ```
+
+Run script:
+
+```bash
+python FILENAME.py
+```

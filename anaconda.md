@@ -3,20 +3,20 @@
 Export to **YML**:
 
 ```bash
-conda env export > dataPy.yml
+conda env export > FILENAME.yml
 ```
 
 Add to the kernels list:
 
 ```bash
-source activate dataPy
-python -m ipykernel install --user --name dataPy
+source activate ENV_NAME
+python -m ipykernel install --user --name ENV_NAME
 ```
 
 Create environment from **YML**:
 
 ```bash
-conda env create -f environment.yml
+conda env create -f FILENAME.yml
 ```
 
 List environments:
@@ -28,7 +28,7 @@ conda list
 Uninstall environment:
 
 ```bash
-conda env remove -n dataPy
+conda env remove -n ENV_NAME
 ```
 
 List environments:
