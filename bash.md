@@ -36,10 +36,10 @@ Create directory:
 mkdir FOLDER_PATH_AND_NAME
 ```
 
-Delete file/directory:
+Delete file/directory (recursive):
 
 ```bash
-rm FOLDER_PATH_AND_NAME
+rm -r FOLDER_PATH_AND_NAME
 ```
 
 Create file:
