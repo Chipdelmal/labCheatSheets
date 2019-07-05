@@ -8,6 +8,11 @@ source activate ENV_NAME
 python -m ipykernel install --user --name ENV_NAME
 ```
 
+List available environments:
+
+```bash
+ipython kernelspec list
+```
 Remove from the Jupyter/Hydrogen kernels list:
 
 ```bash
