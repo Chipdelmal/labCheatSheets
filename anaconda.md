@@ -17,6 +17,12 @@ Deactivate environment:
 conda deactivate
 ```
 
+Create environment:
+
+```bash
+conda create -n ENV_NAME python=3.6
+```
+
 <hr>
 
 Export to **YML**:
