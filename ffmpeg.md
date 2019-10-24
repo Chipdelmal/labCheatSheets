@@ -19,3 +19,11 @@ Convert video into images:
 ```bash
 ffmpeg -i VIDEO_SOURCE_NAME.mp4 -vf fps=FRAMERATE NAME_PATTERN%d.png
 ```
+
+# ImageMagick
+
+Create a GIF from assorted images:
+
+```bash
+convert -resize 50% -delay 20 -loop 0 PATTERN*.EXT OUTPUT.gif
+```
