@@ -42,3 +42,9 @@ Untar file/folder:
 ```bash
 tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
 ```
+
+Check disk usage
+
+```bash
+ncdu
+```
