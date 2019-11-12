@@ -48,3 +48,16 @@ Check disk usage
 ```bash
 ncdu
 ```
+
+Check running processes:
+
+```bash
+htop
+```
+ 
+Or:
+
+```bash
+top
+```
+
