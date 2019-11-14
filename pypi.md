@@ -22,3 +22,9 @@ Check packages versions:
 ```bash
 pip freeze
 ```
+
+Export packages REQUIREMENTS file:
+
+```bash
+pip freeze > requirements.txt
+```
