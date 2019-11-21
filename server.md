@@ -61,3 +61,8 @@ Or:
 top
 ```
 
+Deleting folder recursively (DESTRUCTIVE):
+
+```bash
+rm -R FOLDER_PATH
+```
