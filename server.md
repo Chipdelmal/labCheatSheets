@@ -72,3 +72,10 @@ Update [MoNeT](https://pypi.org/project/MoNeT-MGDrivE/) in the server:
 ```bash
 pip3 install --upgrade MoNeT_MGDrivE
 ```
+
+Force git pull (overwrite changes):
+
+```bash
+git fetch --all
+git reset --hard origin/master
+```
