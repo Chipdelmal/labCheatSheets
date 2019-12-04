@@ -67,11 +67,15 @@ Deleting folder recursively (DESTRUCTIVE):
 rm -R FOLDER_PATH
 ```
 
+<hr>
+
 Update [MoNeT](https://pypi.org/project/MoNeT-MGDrivE/) in the server:
 
 ```bash
 pip3 install --upgrade MoNeT_MGDrivE
 ```
+
+<hr>
 
 Force git pull (overwrite changes):
 
