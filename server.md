@@ -31,6 +31,12 @@ Copy folder **to server** (recursive):
 scp -rp LOCAL_DESTINATION_PATH USERNAME@marshall-lab-cal.berkeley.edu:SERVER_SOURCE_PATH
 ```
 
+Copy files that match extension **from server**:
+
+```bash
+scp USERNAME@marshall-lab-cal.berkeley.edu:SERVER_SOURCE_PATH/*.png LOCAL_DESTINATION_PATH
+```
+
 Tar file/folder:
 
 ```bash
