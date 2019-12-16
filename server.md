@@ -6,6 +6,8 @@ SSH into the server:
 ssh USERNAME@marshall-lab-cal.berkeley.edu
 ```
 
+<hr>
+
 Copy file **from server**:
 
 ```bash
@@ -49,6 +51,8 @@ Untar file/folder:
 tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
 ```
 
+<hr>
+
 Check disk usage
 
 ```bash
@@ -65,12 +69,6 @@ Or:
 
 ```bash
 top
-```
-
-Run script that ignores hangup signal (on the background so that it does not require permanent SSH connection):
-
-```bash
-nohup python scriptName.py OPT1 OPT2 &
 ```
 
 Check processer being run by USER:
@@ -91,7 +89,17 @@ Kill all processes being run by USER (including SSH session):
 pkill -u hector
 ```
 
-Deleting folder recursively (DESTRUCTIVE):
+<hr>
+
+Run script that ignores hangup signal (on the background so that it does not require permanent SSH connection):
+
+```bash
+nohup python scriptName.py OPT1 OPT2 &
+```
+
+<hr>
+
+Delete folder recursively (DESTRUCTIVE):
 
 ```bash
 rm -R FOLDER_PATH
