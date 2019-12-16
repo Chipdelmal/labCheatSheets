@@ -67,6 +67,30 @@ Or:
 top
 ```
 
+Run script that ignores hangup signal (on the background so that it does not require permanent SSH connection):
+
+```bash
+nohup python scriptName.py OPT1 OPT2 &
+```
+
+Check processer being run by USER:
+
+```bash
+ps -u USER
+```
+
+Kill process by PID:
+
+```bash
+kill PID
+```
+
+Kill all processes being run by USER (including SSH session):
+
+```bash
+pkill -u hector
+```
+
 Deleting folder recursively (DESTRUCTIVE):
 
 ```bash
