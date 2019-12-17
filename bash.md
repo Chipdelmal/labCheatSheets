@@ -48,7 +48,7 @@ Create file:
 touch FILENAME.EXTENSION
 ```
 
-Find file (\* acts as wildcard and irrespective of capitalization):
+Find file ('\*' acts as wildcard and irrespective of capitalization):
 
 ```bash
 locate -i FILENAME
