@@ -97,6 +97,31 @@ Run script that ignores hangup signal (on the background so that it does not req
 nohup python scriptName.py OPT1 OPT2 &
 ```
 
+Start *tmux* session:
+
+```bash
+tmux
+```
+
+List active *tmux* sessions:
+
+```bash
+tmux ls
+```
+
+Attach to active *tmux* session by ID:
+
+```bash
+tmux attach -t ID
+```
+
+Detach active *tmux* session (keyboard):
+
+```
+CTRL + B
+then d
+```
+
 <hr>
 
 Delete folder recursively (DESTRUCTIVE):
