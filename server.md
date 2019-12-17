@@ -86,7 +86,7 @@ kill PID
 Kill all processes being run by USER (including SSH session):
 
 ```bash
-pkill -u hector
+pkill -u USER
 ```
 
 <hr>
@@ -130,11 +130,4 @@ Delete folder recursively (DESTRUCTIVE):
 rm -R FOLDER_PATH
 ```
 
-<hr>
-
-Update [MoNeT](https://pypi.org/project/MoNeT-MGDrivE/) in the server:
-
-```bash
-pip3 install --upgrade MoNeT_MGDrivE
-```
 
