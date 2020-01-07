@@ -102,6 +102,11 @@ Start *tmux* session:
 ```bash
 tmux
 ```
+Start *tmux* session with name:
+
+```bash
+tmux new -s NAME
+```
 
 List active *tmux* sessions:
 
