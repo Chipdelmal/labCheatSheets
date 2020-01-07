@@ -127,6 +127,12 @@ CTRL + B
 then d
 ```
 
+Kill session:
+
+```bash
+tmux kill-session -t NAME
+```
+
 <hr>
 
 Delete folder recursively (DESTRUCTIVE):
