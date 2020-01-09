@@ -6,6 +6,12 @@ SSH into the server:
 ssh USERNAME@marshall-lab-cal.berkeley.edu
 ```
 
+Disconnect from the server:
+
+```bash
+exit
+```
+
 <hr>
 
 Copy file **from server**:
