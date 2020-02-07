@@ -65,6 +65,12 @@ Check disk usage
 ncdu
 ```
 
+Check I/O:
+
+```bash
+iostat
+```
+
 Check running processes:
 
 ```bash
