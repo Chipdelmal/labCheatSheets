@@ -10,3 +10,4 @@ Common commands used for various lab-related tasks.
 * [Pypi](./pypi.md)
 * [Python](./python.md)
 * [Server](./server.md)
+* [R](./R.md)
