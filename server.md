@@ -145,6 +145,20 @@ Kill session:
 tmux kill-session -t NAME
 ```
 
+Add a new panel to the *tmux* session (keyboard):
+
+```
+CTRL + B
+then %
+```
+
+Cycle through panels layouts (keyboard):
+
+```
+CTRL + B
+then SPACEBAR
+```
+
 <hr>
 
 Delete folder recursively (DESTRUCTIVE):
