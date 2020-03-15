@@ -142,7 +142,7 @@ read only = no
 force user = nobody
 ```
 
-res
+reset the server:
 
 ```bash
 sudo service smbd restart
