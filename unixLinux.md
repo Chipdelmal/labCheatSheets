@@ -1,5 +1,42 @@
 # Linux/Unix
 
+## SSH Login (Unix)
+
+*SSH* with the default *RSA* key (or the one setup in the `~/.ssh/config` file), or password:
+
+```bash
+ssh USER_NAME@HOST_ADDRESS_OR_NAME
+```
+
+*SSH* with a specific *RSA* key:
+
+```bash
+ssh -i ~/.ssh/KEY_FILE USER_NAME@HOST_ADDRESS_OR_NAME
+```
+
+To setup the key automatically for a specific host create or open the *config* file:
+
+```bash
+nano ~/.ssh/config
+```
+
+and add the following to setup the alias and key:
+
+```
+Host HOST_ADDRESS_OR_NAME
+  HostName ALIAS
+  User USER_NAME
+  IdentityFile ~/.ssh/KEY_FILE
+  PreferredAuthentications publickey
+```
+
+In MacOs, the password can be added to the keychain automatically by adding the following lines:
+
+```
+  UseKeychain yes
+  AddKeysToAgent yes
+```
+
 ##  Common Operations (Linux)
 
 Update packages (Linux):
@@ -31,7 +68,7 @@ Add public key to host:
 cat ~/KEYFILE_NAME.pub >> ~/.ssh/authorized_keys
 ```
 
-## SSH Access Setup (Linux):
+## SSH Server Access Setup (Linux):
 
 Install OpenSSH server:
 
