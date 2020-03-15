@@ -120,8 +120,8 @@ sudo apt-get install samba samba-common python-glade2 system-config-samba
 Set the directory permissions so that anyone can read/write to it:
 
 ```bash
-sudo chown -R nobody:nogroup /home/hendadel/sambashare/
-sudo chmod -R 0775 /home/hendadel/sambashare/
+sudo chown -R nobody:nogroup FOLDER_PATH
+sudo chmod -R 0775 FOLDER_PATH
 ```
 
 Open the *config* file:
@@ -130,7 +130,7 @@ Open the *config* file:
 sudo nano /etc/samba/smb.conf
 ```
 
-and add the following lines:
+and add the following lines (set *guest* to **no** if authentication is needed, and/or *writable* to **no** with *read only* to **yes** to avoid writing privileges):
 
 ```
 [SambaShare]
@@ -142,7 +142,7 @@ read only = no
 force user = nobody
 ```
 
-restart the server:
+res
 
 ```bash
 sudo service smbd restart
