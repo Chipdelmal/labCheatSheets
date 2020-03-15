@@ -1,8 +1,28 @@
 # Linux/Unix
 
-## SSH Login (Unix)
+##  Common Operations (Linux)
 
-*SSH* with the default *RSA* key (or the one setup in the `~/.ssh/config` file), or password:
+Update packages (Linux):
+
+```bash
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+apt autoremove
+```
+
+Check interfaces status (_ip_ address):
+
+```bash
+ifconfig
+```
+
+
+<hr>
+
+## SSH Login to a Host (Unix)
+
+*SSH* with password, or the default *RSA* key (or the one setup in the `~/.ssh/config` file):
 
 ```bash
 ssh USER_NAME@HOST_ADDRESS_OR_NAME
@@ -37,16 +57,6 @@ In MacOs, the password can be added to the keychain automatically by adding the 
   AddKeysToAgent yes
 ```
 
-##  Common Operations (Linux)
-
-Update packages (Linux):
-
-```bash
-apt-get update
-apt-get upgrade
-apt-get dist-upgrade
-apt autoremove
-```
 
 ##  RSA Setup (Unix)
 
@@ -67,6 +77,8 @@ Add public key to host:
 ```bash
 cat ~/KEYFILE_NAME.pub >> ~/.ssh/authorized_keys
 ```
+
+<hr>
 
 ## SSH Server Access Setup (Linux):
 
@@ -97,10 +109,41 @@ sudo systemctl stop ssh
 ```
 
 
-## Interface Config (Unix):
+##  Setup Samba Server (Linux):
 
-Check interfaces status (_ip_):
+Install samba server:
 
 ```bash
-ifconfig
+sudo apt-get install samba samba-common python-glade2 system-config-samba
+```
+
+Set the directory permissions so that anyone can read/write to it:
+
+```bash
+sudo chown -R nobody:nogroup /home/hendadel/sambashare/
+sudo chmod -R 0775 /home/hendadel/sambashare/
+```
+
+Open the *config* file:
+
+```bash
+sudo nano /etc/samba/smb.conf
+```
+
+and add the following lines:
+
+```
+[SambaShare]
+Comment = Samba Shared Directory
+path = FOLDER_PATH
+writable = yes
+guest ok = yes
+read only = no
+force user = nobody
+```
+
+restart the server:
+
+```bash
+sudo service smbd restart
 ```
