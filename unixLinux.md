@@ -58,7 +58,7 @@ In MacOs, the password can be added to the keychain automatically by adding the 
 ```
 
 
-##  RSA Setup (Unix)
+##  [RSA Setup (Unix)](https://linuxize.com/post/how-to-set-up-ssh-keys-on-ubuntu-1804/)
 
 Generate RSA key:
 
@@ -80,7 +80,7 @@ cat ~/KEYFILE_NAME.pub >> ~/.ssh/authorized_keys
 
 <hr>
 
-## SSH Server Access Setup (Linux):
+## [SSH Server Access Setup (Linux)](https://kb.iu.edu/d/aews)
 
 Install OpenSSH server:
 
@@ -109,7 +109,7 @@ sudo systemctl stop ssh
 ```
 
 
-##  Setup Samba Server (Linux):
+##  [Setup Samba Server (Linux)](https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21):
 
 Install samba server:
 
