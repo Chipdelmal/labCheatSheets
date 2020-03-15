@@ -2,7 +2,7 @@
 
 ##  Common Operations (Linux)
 
-Update packages (Linux):
+Update packages:
 
 ```bash
 apt-get update
@@ -15,6 +15,13 @@ Check interfaces status (_ip_ address):
 
 ```bash
 ifconfig
+```
+
+Install from **run** file:
+
+```bash
+chmod +x APP_NAME.run
+APP_NAME.run
 ```
 
 
