@@ -11,4 +11,5 @@ Common commands used for various lab-related tasks.
 * [Python](./python.md)
 * [Server](./server.md)
 * [R](./R.md)
+* [SSH @ Cal (VPN)](./remoteSSHDesktop.md)
 * [Unix/Linux](./unixLinux.md)
