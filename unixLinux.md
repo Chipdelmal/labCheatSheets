@@ -24,6 +24,13 @@ chmod +x APP_NAME.run
 APP_NAME.run
 ```
 
+Suspend/Hibernate:
+
+```bash
+systemctl suspend
+systemctl hibernate
+```
+
 
 <hr>
 
