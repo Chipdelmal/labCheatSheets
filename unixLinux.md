@@ -31,6 +31,11 @@ systemctl suspend
 systemctl hibernate
 ```
 
+Setup scripts to run at time intervals with [crontab](https://help.ubuntu.com/community/CronHowto):
+
+```bash
+crontab -e
+```
 
 <hr>
 
