@@ -1,5 +1,7 @@
 # Linux/Unix
 
+For a list of useful Linux shortcuts, follow this [link](https://itsfoss.com/ubuntu-shortcuts/).
+
 ##  Common Operations (Linux)
 
 Update packages:
