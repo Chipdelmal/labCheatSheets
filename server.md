@@ -57,6 +57,12 @@ Untar file/folder:
 tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
 ```
 
+Check folder size:
+
+```bash
+du -h --max-depth=1 /path/to/directory
+```
+
 <hr>
 
 Check disk usage
