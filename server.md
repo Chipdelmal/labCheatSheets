@@ -82,7 +82,7 @@ Check running processes:
 ```bash
 htop
 ```
- 
+
 Or:
 
 ```bash
@@ -115,56 +115,6 @@ Run script that ignores hangup signal (on the background so that it does not req
 nohup python scriptName.py OPT1 OPT2 &
 ```
 
-Start *tmux* session:
-
-```bash
-tmux
-```
-Start *tmux* session with name:
-
-```bash
-tmux new -s NAME
-```
-
-List active *tmux* sessions:
-
-```bash
-tmux ls
-```
-
-Attach to active *tmux* session by ID:
-
-```bash
-tmux attach -t ID
-```
-
-Detach active *tmux* session (keyboard):
-
-```
-CTRL + B
-then d
-```
-
-Kill session:
-
-```bash
-tmux kill-session -t NAME
-```
-
-Add a new panel to the *tmux* session (keyboard):
-
-```
-CTRL + B
-then %
-```
-
-Cycle through panels layouts (keyboard):
-
-```
-CTRL + B
-then SPACEBAR
-```
-
 <hr>
 
 Delete folder recursively (DESTRUCTIVE):
@@ -172,5 +122,3 @@ Delete folder recursively (DESTRUCTIVE):
 ```bash
 rm -R FOLDER_PATH
 ```
-
-

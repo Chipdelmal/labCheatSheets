@@ -12,4 +12,5 @@ Common commands used for various lab-related tasks.
 * [Server](./server.md): Lots of server-related tasks.
 * [R](./R.md): Install packages from terminal.
 * [SSH @ Cal (VPN)](./remoteSSHDesktop.md): Logging in to desktops through VPN + SSH.
+* [tMux](./tmux.md): Best terminal multitasking tool. 
 * [Unix/Linux](./unixLinux.md): Several useful Unix and Linux commands.
