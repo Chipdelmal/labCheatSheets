@@ -11,6 +11,7 @@ Common commands used for various lab-related tasks.
 * [Python](./python.md): Install packages and run scripts.
 * [Server](./server.md): Lots of server-related tasks.
 * [R](./R.md): Install packages from terminal.
+* [Samba](./samba.md): File-sharing protocol.
 * [SSH @ Cal (VPN)](./remoteSSHDesktop.md): Logging in to desktops through VPN + SSH.
-* [tMux](./tmux.md): Best terminal multitasking tool. 
+* [tMux](./tmux.md): Best terminal multitasking tool.
 * [Unix/Linux](./unixLinux.md): Several useful Unix and Linux commands.
