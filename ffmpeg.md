@@ -27,3 +27,9 @@ Create a GIF from assorted images:
 ```bash
 convert -resize 50% -delay 20 -loop 0 PATTERN*.EXT OUTPUT.gif
 ```
+
+Batch convert PDFs into PNGs in a folder:
+
+```bash
+mogrify -verbose -density 250 -resize 600 -background white -alpha remove -alpha off -format png ./*.pdf
+```
