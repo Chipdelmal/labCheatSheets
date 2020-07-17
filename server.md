@@ -49,6 +49,7 @@ Tar file/folder:
 
 ```bash
 tar -czvf TAR_FILENAME.tar.gz FOLDER_OR_FILE_PATH
+tar -cjf ANALYZED.tar.bz2 ./ANALYZED
 ```
 
 Untar file/folder:
