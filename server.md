@@ -58,10 +58,10 @@ Untar file/folder:
 tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
 ```
 
-Tar folder to **BZ2**:
+Tar folder to *BZ2*:
 
 ```bash
-tar -C /PATH/TO/MY/DIRECTORY --remove-files -cf - MYFOLDER | lbzip2 -9 -n CORES > MYFOLDER.tar.bz2
+tar c ./FOLDER | lbzip2 -n CORES_NUMBER > FOLDER.tar.bz2
 ```
 
 Check folder size:
