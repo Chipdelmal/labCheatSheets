@@ -99,6 +99,12 @@ Add public key to host:
 cat ~/KEYFILE_NAME.pub >> ~/.ssh/authorized_keys
 ```
 
+Copy public key to clipboard
+
+```bash
+xclip -sel clip < ~/.ssh/id_rsa.pub
+```
+
 <hr>
 
 ## [SSH Server Access Setup (Linux)](https://kb.iu.edu/d/aews)
