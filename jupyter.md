@@ -23,6 +23,15 @@ jupyter kernelspec uninstall ENV_NAME
 
 Startup code for **MoNeT_MGDrivE**:
 
+There are two options to fix this. The first one is a bit more obscure but automatic:
+
 ```
 {"MoNeT": "%matplotlib inline \nimport os \nimport conda \nconda_file_dir = conda.__file__ \nconda_dir = conda_file_dir.split('lib')[0] \nproj_lib = os.path.join(os.path.join(conda_dir, 'share'), 'proj') \nos.environ['PROJ_LIB'] = proj_lib"}
+```
+
+The second one is more manual but clear:
+
+```
+import os
+os.environ['PROJ_LIB'] = 'PATH_TO_ANACONDA/share/proj'
 ```
