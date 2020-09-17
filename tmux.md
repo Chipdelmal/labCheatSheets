@@ -36,11 +36,18 @@ Kill session:
 tmux kill-session -t NAME
 ```
 
-Add a new panel to the *tmux* session (keyboard):
+Add horizonal panel to the *tmux* session (keyboard):
 
 ```
 CTRL + B
 then %
+```
+
+Add vertical panel to the *tmux* session (keyboard):
+
+```
+CTRL + B
+then " 
 ```
 
 Cycle through panels layouts (keyboard):
