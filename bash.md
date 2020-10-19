@@ -6,6 +6,12 @@ List files/folders in the current directory:
 ls
 ```
 
+List files/folders in the current directory with date and pattern match:
+
+```bash
+ls -ld *
+```
+
 Display current path:
 
 ```bash
