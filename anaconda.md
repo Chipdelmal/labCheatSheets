@@ -28,13 +28,13 @@ conda create -n ENV_NAME python=3.6
 Export to **YML**:
 
 ```bash
-conda env export > FILENAME.yml
+conda env export > REQUIREMENTS.yml
 ```
 
 Create environment from **YML**:
 
 ```bash
-conda env create -f REQUIREMENTS.txt
+conda env create -f REQUIREMENTS.yml
 ```
 
 Export requirements to **txt** file:
