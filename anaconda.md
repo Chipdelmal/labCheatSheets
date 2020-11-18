@@ -34,7 +34,7 @@ conda env export > FILENAME.yml
 Create environment from **YML**:
 
 ```bash
-conda env create -f FILENAME.yml
+conda env create -f REQUIREMENTS.txt
 ```
 
 Export requirements to **txt** file:
