@@ -4,6 +4,7 @@ Common commands used for various lab-related tasks.
 
 * [Anaconda](./anaconda.md): Basic operations such as creating environments, and exporting requirments for Python and R.
 * [Bash](./bash.md): Common commands for Unix systems.
+* [Basemap](./basemap.md): Common commands for Unix systems.
 * [FFmpeg and ImageMagick](./ffmpeg.md): For video, audio and image processing.
 * [Git](./git.md): Everyday survival commands.
 * [Jupyter](./jupyter.md): Instructions for anaconda integration.
