@@ -45,6 +45,12 @@ Create a symlink to folder:
 ln -s PATH_TO_SOURCE_FOLDER FOLDER_NAME
 ```
 
+Remove a symlink:
+
+```bash
+unlink
+```
+
 <hr>
 
 ## SSH Login to a Host (Unix)
