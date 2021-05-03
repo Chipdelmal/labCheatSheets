@@ -124,6 +124,14 @@ nohup python scriptName.py OPT1 OPT2 &
 
 <hr>
 
+To backup datasets to the shared drive, first follow these instructions: https://rclone.org/drive/ (use `serverBackup` for the drive name, preferably). Then, simply run:
+
+```bash
+rclone copy FILENAME.tar.gz serverBackup:/PATH_TO_FILE --transfers=10 --checkers=10 --fast-list --drive-chunk-size=256M --verbose 
+```
+
+<hr>
+
 Delete folder recursively (DESTRUCTIVE):
 
 ```bash
