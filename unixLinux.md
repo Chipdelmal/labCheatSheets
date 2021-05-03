@@ -39,6 +39,18 @@ Setup scripts to run at time intervals with [crontab](https://help.ubuntu.com/co
 crontab -e
 ```
 
+Create a symlink to folder:
+
+```bash
+ln -s PATH_TO_SOURCE_FOLDER FOLDER_NAME
+```
+
+Remove a symlink:
+
+```bash
+unlink
+```
+
 <hr>
 
 ## SSH Login to a Host (Unix)
