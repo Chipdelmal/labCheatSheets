@@ -12,7 +12,6 @@ Disconnect from the server:
 exit
 ```
 
-<hr>
 
 Copy file **from server**:
 
@@ -45,32 +44,17 @@ Copy files that match extension **from server**:
 scp USERNAME@marshall-lab-cal.berkeley.edu:SERVER_SOURCE_PATH/*.png LOCAL_DESTINATION_PATH
 ```
 
-Tar file/folder:
-
-```bash
-tar -czvf TAR_FILENAME.tar.gz FOLDER_OR_FILE_PATH
-tar -cjf ANALYZED.tar.bz2 ./ANALYZED
-```
-
-Untar file/folder:
-
-```bash
-tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
-```
-
-Tar folder to *BZ2*:
-
-```bash
-tar c ./FOLDER | lbzip2 -n CORES_NUMBER > FOLDER.tar.bz2
-```
-
 Check folder size:
 
 ```bash
 du -h --max-depth=1 /path/to/directory
 ```
 
-<hr>
+Delete folder recursively (DESTRUCTIVE):
+
+```bash
+rm -R FOLDER_PATH
+```
 
 Check disk usage
 
@@ -78,11 +62,16 @@ Check disk usage
 ncdu
 ```
 
+<hr>
+
+## Processes
+
 Check I/O:
 
 ```bash
 iostat
 ```
+
 
 Check running processes:
 
@@ -114,8 +103,6 @@ Kill all processes being run by USER (including SSH session):
 pkill -u USER
 ```
 
-<hr>
-
 Run script that ignores hangup signal (on the background so that it does not require permanent SSH connection):
 
 ```bash
@@ -124,16 +111,30 @@ nohup python scriptName.py OPT1 OPT2 &
 
 <hr>
 
+## Backup to google drive
+
 To backup datasets to the shared drive, first follow these instructions: https://rclone.org/drive/ (use `serverBackup` for the drive name, preferably). Then, simply run:
 
 ```bash
 rclone copy FILENAME.tar.gz serverBackup:/PATH_TO_FILE --transfers=10 --checkers=10 --fast-list --drive-chunk-size=256M --verbose 
 ```
 
-<hr>
-
-Delete folder recursively (DESTRUCTIVE):
+Tar file/folder:
 
 ```bash
-rm -R FOLDER_PATH
+tar -czvf TAR_FILENAME.tar.gz FOLDER_OR_FILE_PATH
+tar -cjf ANALYZED.tar.bz2 ./ANALYZED
 ```
+
+Untar file/folder:
+
+```bash
+tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
+```
+
+Tar folder to *BZ2*:
+
+```bash
+tar c ./FOLDER | lbzip2 -n CORES_NUMBER > FOLDER.tar.bz2
+```
+
