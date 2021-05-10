@@ -47,7 +47,7 @@ scp USERNAME@marshall-lab-cal.berkeley.edu:SERVER_SOURCE_PATH/*.png LOCAL_DESTIN
 Check folder size:
 
 ```bash
-du -h --max-depth=1 /path/to/directory
+du -h --max-depth=0 /path/to/directory
 ```
 
 Delete folder recursively (DESTRUCTIVE):
