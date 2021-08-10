@@ -57,6 +57,11 @@ rm -R FOLDER_PATH
 ```
 
 Check disk usage
+```bash
+df -h
+```
+
+or 
 
 ```bash
 ncdu
