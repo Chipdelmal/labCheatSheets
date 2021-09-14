@@ -45,6 +45,12 @@ Create a symlink to folder:
 ln -s PATH_TO_SOURCE_FOLDER FOLDER_NAME
 ```
 
+Check symlinks recursively:
+
+```bash
+find . -type l -ls
+```
+
 Remove a symlink:
 
 ```bash
