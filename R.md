@@ -7,3 +7,5 @@ devtools::document()
 devtools::build()
 devtools::install()
 ```
+
+RCpp compiler tools: https://thecoatlessprofessor.com/programming/cpp/r-compiler-tools-for-rcpp-on-macos/
