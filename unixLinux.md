@@ -4,6 +4,13 @@ For a list of useful Linux shortcuts, follow this [link](https://itsfoss.com/ubu
 
 ##  Common Operations (Linux)
 
+
+Check number of folders in directory:
+
+```bash
+ls | wc -l
+```
+
 Update packages:
 
 ```bash
