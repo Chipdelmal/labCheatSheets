@@ -12,7 +12,6 @@ Disconnect from the server:
 exit
 ```
 
-<hr>
 
 Copy file **from server**:
 
@@ -45,25 +44,32 @@ Copy files that match extension **from server**:
 scp USERNAME@marshall-lab-cal.berkeley.edu:SERVER_SOURCE_PATH/*.png LOCAL_DESTINATION_PATH
 ```
 
-Tar file/folder:
+Check folder size:
 
 ```bash
-tar -czvf TAR_FILENAME.tar.gz FOLDER_OR_FILE_PATH
+du -h --max-depth=0 /path/to/directory
 ```
 
-Untar file/folder:
+Delete folder recursively (DESTRUCTIVE):
 
 ```bash
-tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
+rm -R FOLDER_PATH
 ```
-
-<hr>
 
 Check disk usage
+```bash
+df -h
+```
+
+or 
 
 ```bash
 ncdu
 ```
+
+<hr>
+
+## Processes
 
 Check I/O:
 
@@ -71,12 +77,13 @@ Check I/O:
 iostat
 ```
 
+
 Check running processes:
 
 ```bash
 htop
 ```
- 
+
 Or:
 
 ```bash
@@ -101,56 +108,38 @@ Kill all processes being run by USER (including SSH session):
 pkill -u USER
 ```
 
-<hr>
-
 Run script that ignores hangup signal (on the background so that it does not require permanent SSH connection):
 
 ```bash
 nohup python scriptName.py OPT1 OPT2 &
 ```
 
-Start *tmux* session:
-
-```bash
-tmux
-```
-Start *tmux* session with name:
-
-```bash
-tmux new -s NAME
-```
-
-List active *tmux* sessions:
-
-```bash
-tmux ls
-```
-
-Attach to active *tmux* session by ID:
-
-```bash
-tmux attach -t ID
-```
-
-Detach active *tmux* session (keyboard):
-
-```
-CTRL + B
-then d
-```
-
-Kill session:
-
-```bash
-tmux kill-session -t NAME
-```
-
 <hr>
 
-Delete folder recursively (DESTRUCTIVE):
+## Backup to google drive
+
+To backup datasets to the shared drive, first follow these instructions: https://rclone.org/drive/ (use `serverBackup` for the drive name, preferably). Then, simply run:
 
 ```bash
-rm -R FOLDER_PATH
+rclone copy FILENAME.tar.gz serverBackup:/PATH_TO_FILE --transfers=10 --checkers=10 --fast-list --drive-chunk-size=256M --verbose 
 ```
 
+Tar file/folder:
+
+```bash
+tar -czvf TAR_FILENAME.tar.gz FOLDER_OR_FILE_PATH
+tar -cjf ANALYZED.tar.bz2 ./ANALYZED
+```
+
+Untar file/folder:
+
+```bash
+tar -C OUTPUT_PATH -zxvf FILENAME.tar.gz
+```
+
+Tar folder to *BZ2*:
+
+```bash
+tar c ./FOLDER | lbzip2 -n CORES_NUMBER > FOLDER.tar.bz2
+```
 
