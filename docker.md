@@ -38,11 +38,18 @@ Delete all containers:
 docker rm $(docker ps -a -q)
 ```
 
+## Building Images (Dockerfile in current directory)
 
 Create image:
 
 ```bash
 docker build --tag=NAME .
+```
+
+Build image with tagname:
+
+```bash
+docker build -t IMG_NAME:TAG_NAME .
 ```
 
 ## Running Containers
