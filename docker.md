@@ -52,6 +52,12 @@ Build image with tagname:
 docker build -t IMG_NAME:TAG_NAME .
 ```
 
+Pushing image:
+
+```bash
+docker push IMG_NAME:TAG_NAME
+```
+
 ## Running Containers
 
 Running container in interactive bash mode:
