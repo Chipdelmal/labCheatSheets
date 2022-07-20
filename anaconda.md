@@ -49,6 +49,12 @@ Import requirements from **txt** file:
 conda create -n new ENV_NAME --file REQUIREMENTS.txt
 ```
 
+Install requirements from **txt** file into existing env:
+
+```
+conda install --file REQUIREMENTS.txt
+```
+
 <hr>
 
 
