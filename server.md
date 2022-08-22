@@ -143,3 +143,8 @@ Tar folder to *BZ2*:
 tar c ./FOLDER | lbzip2 -n CORES_NUMBER > FOLDER.tar.bz2
 ```
 
+Tar folders in current directory to separate *BZ2* files:
+
+```bash
+for dir in */; do tar c "$dir" | lbzip2 -n CORES_NUMBER > "${dir%/}".tar.bz2; done
+```
