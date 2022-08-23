@@ -148,3 +148,9 @@ Tar folders in current directory to separate *BZ2* files:
 ```bash
 for dir in */; do tar c "$dir" | lbzip2 -n CORES_NUMBER > "${dir%/}".tar.bz2; done
 ```
+
+Batch upload files in current directory to the server:
+
+```bash
+for f in ./*.bz2; do  rclone copy  $f serverBackup:/ --transfers=10 --checkers=10 --fast-list --drive-chunk-size=256M --verbose; done
+```
