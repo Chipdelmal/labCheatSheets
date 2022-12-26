@@ -56,6 +56,12 @@ Delete folder recursively (DESTRUCTIVE):
 rm -R FOLDER_PATH
 ```
 
+Delete long lists with pattern:
+
+```bash
+find . -name '*PATTERN*' | xargs rm
+```
+
 Check disk usage
 ```bash
 df -h
