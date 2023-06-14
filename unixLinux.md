@@ -64,6 +64,12 @@ Remove a symlink:
 unlink
 ```
 
+Find files that match pattern, and delete:
+
+```bash
+find . -name '*PATTERN*' -delete
+```
+
 <hr>
 
 ## SSH Login to a Host (Unix)
