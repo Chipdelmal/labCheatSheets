@@ -44,6 +44,12 @@ Copy files that match extension **from server**:
 scp USERNAME@marshall-lab-cal.berkeley.edu:SERVER_SOURCE_PATH/*.png LOCAL_DESTINATION_PATH
 ```
 
+Download list of files in txt file (separated by line) to local:
+
+```bash
+for i in `cat FILE_WITH_NAMES.txt`; do scp "USERNAME@marshall-lab-cal.berkeley.edu:/PATH_TO_REMOTE/${i}" PATH_TO_LOCAL; done
+```
+
 Check folder size:
 
 ```bash
